@@ -1,0 +1,120 @@
+.content {
+    margin: 5% 0% 0 12%;
+    width: 85%;
+}
+
+#welcome_par {
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+#cal_par,
+#todays_App_par {
+    text-align: center;
+    padding-top: 3%;
+}
+
+.patients_tbl {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+    border-collapse: separate!important;
+}
+
+.card {
+    background: #7cc1b2 !important;
+    float: left;
+    width: 25%;
+    margin: 10px;
+    color: #1e1c1c;
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.6), 0 2px 10px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.6), 0 2px 10px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 3px 4px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6), 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: rgb(85, 83, 83);
+    text-decoration: none;
+    transition: all ease 300ms;
+}
+
+.col-auto {
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card-body {
+    text-align: left;
+    height: 100%;
+}
+
+.row {
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.patients-links {
+    position: absolute;
+    background-color: #CCCCCC;
+    border-radius: 5px;
+    bottom: 15px;
+    list-style-type: none;
+    margin-left: -15px;
+    padding: 10px;
+    display: none;
+    z-index: 1;
+}
+
+li.liPatients {
+    margin: 2px 0 2px 0;
+}
+
+.side_arrow {
+    position: absolute;
+    top: 455px;
+    left: 230px;
+    display: none;
+    z-index: 200;
+    /* width: 20px;
+    height: 20px; */
+}
+.empty {
+    margin-top:30px;
+    text-align: center;
+    font-size: 20px;
+}
+.side_arrow:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border: 15px solid;
+    border-color: transparent #CCCCCC transparent transparent;
+}
+
+ul li:hover a {
+    color: black;
+}
+
+.table-div {
+    max-width: 1300px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+}

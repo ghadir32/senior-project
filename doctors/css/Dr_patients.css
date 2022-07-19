@@ -1,0 +1,173 @@
+body {
+    background: #E1F3EF; /* fallback for old browsers */
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+}
+
+.profile .card {
+    border-radius: 10px;
+    background: #7cc1b2;
+}
+
+    .profile .card .card-header .profile_img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin: 10px auto;
+        border: 10px solid #ccc;
+        border-radius: 50%;
+    }
+
+    .profile .card h3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .profile .card p {
+        font-size: 16px;
+        color: #000;
+    }
+
+.profile .table th,
+.profile .table td {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #000;
+}
+
+.ScriptHeader {
+    margin: 5% 0% 0 14%;
+}
+
+#selectpatientk{
+width: 30%;
+}
+
+ #choosePatient{
+     margin-left: 10%;
+ }
+ 
+ .dropdown{
+     margin-left: 10% !important;
+  }
+
+#showAppBtn{
+    margin-left: 10% !important;
+
+}
+
+h3{
+    margin-left:10%;
+}
+
+.multipleSelection{
+    float: right;
+}
+
+#AppDate{
+    font-size:medium;
+    font-weight: bold;
+}
+
+.appointmentdetails{
+visibility: hidden;
+}
+
+
+.multipleSelection {
+    width: 250px;
+    background-color : #7CC1B2; 
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#checkBoxes {
+    display: none;
+    border: 1px #7cc1b2 solid;
+    min-height: fit-content;
+    max-height: 250px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 1% 1% 3% 3%;
+
+}
+
+.multipleSelection{
+    border-radius: 1% 1% 3% 3%;
+    position: relative;
+
+}
+
+#checkBoxes::-webkit-scrollbar {
+    width: 10px;
+}
+
+#checkBoxes::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+#checkBoxes::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+#checkBoxes label {
+    display: block;
+}
+
+#checkBoxes label:hover {
+    background-color: #4F615E;
+}
+
+#showAppBtn{
+    display: none;
+}
+
+#submitDate{
+    float: right;
+    position: absolute;
+ }
+
+ #appdatee{
+    background-color : #7CC1B2; 
+}
+
+.lastsessnotes{
+    margin: 10px 0 10px 30px;
+}
+
+#lastsessionNote{
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+#txtareaNote{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.lastsessnotes{
+    display: none;
+}

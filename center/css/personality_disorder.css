@@ -1,0 +1,9 @@
+.body-portrait-container {
+    background-image: url("../../images/personality_health_header.jpg");
+    background-position: top;
+    color: white;
+}
+
+.body-portrait-header h2 {
+    text-shadow: 0px 0px 5px black;
+}

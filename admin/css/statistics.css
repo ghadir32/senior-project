@@ -1,0 +1,105 @@
+﻿
+header {
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+#logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+    #logo img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+
+
+
+#project {
+    float: left;
+}
+
+    #project span {
+        color: #5D6975;
+        text-align: right;
+        width: 52px;
+        margin-right: 10px;
+        display: inline-block;
+        font-size: 0.8em;
+    }
+
+#company {
+
+    text-align: center;
+}
+
+    #project div,
+    #company div {
+        white-space: nowrap;
+        margin-top: 5px;
+    }
+
+.clearfix{
+    display:none;
+}
+
+
+
+.charts {
+    margin: 5% 0% 0 15%;
+    width: 85%;
+}
+
+#barChart {
+    max-width: 600px;
+    max-height: 500px;
+}
+.line {
+    margin-top:60px;
+    margin-bottom:100px;
+
+    justify-content:center;
+    max-width: 1000px;
+    max-height: 500px;
+}
+#PieChart {
+    max-width: 300px;
+    max-height: 300px;
+    margin-left:140px;
+}
+.print {
+    margin-right:5%;
+    margin-bottom:5%;
+    text-align:right;
+    justify-content: right;
+}
+
+@media print{
+    #sidNav{
+        display:none;
+    }
+    .print {
+        display: none;
+    }
+    #PieChart {
+        margin-top: 40px;
+    }
+    marquee {
+        display: none;
+    }
+    #PieChart, #barChart{
+        text-align:center;
+        justify-content:center;
+    }
+    .clearfix {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    #PieChart {
+        margin-top:40px;
+    }
+    }

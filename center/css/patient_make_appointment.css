@@ -1,0 +1,687 @@
+﻿#b4Nav {
+    background-color: #e2e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    height: 35px;
+    align-items: center !important;
+    padding: 0 20px 0 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.booknow {
+    position: relative;
+    top: 38px;
+    left: 150px;
+}
+
+
+
+.booknow {
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555 !important;
+    color: white;
+    font-size: 16px;
+    border: none !important;
+    cursor: pointer;
+    width: 40px !important;
+    width: 12% !important;
+    height: 40px !important;
+}
+
+    .booknow:hover {
+        border-radius: 5px;
+        color: #33ffff !important;
+        box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+        transition: all 500ms ease;
+    }
+
+
+
+
+.topicons {
+    margin-right: 10px;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+nav {
+    display: flex;
+    /* position: fixed; */
+    background-color: #7cc1b2;
+    z-index: 10000 !important;
+    /* transition: .6s; */
+}
+
+
+.fixed {
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    transition: .6s;
+}
+
+.logoImg {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 8px;
+}
+
+.userImg {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 15px;
+    float: right;
+    margin-right: 40px;
+}
+
+
+nav #logo {
+    float: left;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 43px;
+    padding-left: 60px;
+    margin-right: 60px;
+}
+
+.centerName {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 38px;
+    padding-left: 10px;
+    position: relative;
+    bottom: -10px;
+}
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav ul {
+    float: left;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+    nav ul li {
+        float: left;
+        display: inline-block;
+        background: #7cc1b2;
+        margin: 0 5px;
+        position: relative;
+        top: 6px;
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none !important;
+            line-height: 62px;
+            font-size: 18px;
+            padding: 8px 15px;
+        }
+
+            nav ul li a:hover {
+                border-radius: 5px;
+                color: #33ffff;
+                box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+            }
+
+    nav ul ul li a:hover {
+        color: #33ffff;
+        box-shadow: none;
+    }
+
+    nav ul ul {
+        position: absolute;
+        top: 77px;
+        opacity: 0;
+        visibility: hidden;
+        transition: top .6s;
+        border-top: 2px solid #33ffff;
+    }
+
+    nav ul li:hover > ul {
+        top: 62px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav ul ul li a {
+        line-height: 45px;
+    }
+
+    nav ul ul li {
+        position: relative;
+        margin: 0;
+        width: 190px;
+        float: none;
+        display: list-item;
+        border-bottom: 1px solid rgba(0,0,0,.3);
+    }
+
+.showw, .navInputs, .menuIcon {
+    display: none;
+}
+
+.userul {
+    float: right !important;
+}
+
+@media all and (max-width: 968px) {
+
+    .userImg {
+        display: none !important;
+    }
+
+    .booknow {
+        display: none !important;
+    }
+
+    #b4Nav {
+        display: none;
+    }
+
+    nav ul {
+        margin-right: 0;
+        float: left;
+    }
+
+    nav #logo {
+        padding-left: 30px;
+        width: 100%;
+    }
+
+    nav ul li, nav ul ul li {
+        display: block !important;
+        width: 100%;
+    }
+
+    nav ul ul {
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .show {
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+
+        .show:hover {
+            color: #33ffff;
+        }
+
+    nav ul li a:hover {
+        box-shadow: none;
+    }
+
+    .menuIcon {
+        display: block;
+        color: white;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    .show + a, ul {
+        display: none;
+    }
+
+    [id^=btn]:checked + ul {
+        display: block;
+    }
+
+    nav ul ul a {
+        padding-left: 40px;
+    }
+
+    nav ul ul li {
+        border-bottom: 0;
+    }
+}
+
+
+nav.sticky {
+    background-color: #70d1ba;
+    transition: .6s;
+}
+
+    nav.sticky ul li {
+        background-color: #70d1ba;
+        transition: .6s;
+    }
+
+        nav.sticky ul li a {
+            color: black;
+            transition: .6s;
+        }
+
+
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+.login-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 500px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+   
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+    .login-box h2 {
+        margin: 0 0 30px;
+        padding: 0;
+
+        text-align: center;
+    }
+
+    .login-box .user-box {
+        position: relative;
+    }
+
+        .login-box .user-box input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background: transparent;
+        }
+
+        .login-box .user-box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .login-box .user-box input:focus ~ label,
+        .login-box .user-box input:valid ~ label {
+            top: -20px;
+            left: 0;
+            color: #03e9f4;
+            font-size: 12px;
+        }
+
+    .login-box form button {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #7cc1b2;
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+
+        letter-spacing: 4px;
+        border: none;
+        margin-left: 25%;
+    }
+
+    .login-box button:hover {
+        background: #7cc1b2;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #7cc1b2, 0 0 25px #7cc1b2, 0 0 50px #7cc1b2, 0 0 100px #7cc1b2;
+    }
+
+    .login-box button span {
+        position: absolute;
+        display: block;
+    }
+
+        .login-box button span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #7cc1b2);
+            animation: btn-anim1 1s linear infinite;
+        }
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,100% {
+        left: 100%;
+    }
+}
+
+.login-box button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #7cc1b2);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,100% {
+        top: 100%;
+    }
+}
+
+.login-box button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #7cc1b2);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,100% {
+        right: 100%;
+    }
+}
+
+.login-box button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #7cc1b2);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,100% {
+        bottom: 100%;
+    }
+}
+.modal-dialog .modal-content {
+    width: 1000px;
+    left: 0 !important;
+
+}
+.modal-dialog{
+  
+}
+.modal {
+    margin: 10% 10% 0% 0%;
+    left: 0;
+
+   
+}
+
+.row {
+
+    margin-right: 0px; 
+    margin-left: 0px; 
+}
+
+.book_info img {
+    width: 150px;
+    height:150px;
+    border-radius:50%;
+}
+.book_info p {
+margin-top:10px
+}
+.inf{
+    font-weight:bold;
+}
+.modal-body, .modal-header {
+    padding: 30px;
+    background: #f1faf7;
+}
+
+.modal-header {
+display:block;
+}
+    .modal-header .modal-title {
+        text-align: center;
+    }
+.modal-body .book_info {
+    background: #7cc1b2;
+    text-align: center;
+    border-radius: 0px 25% 0px 25%;
+}
+    .modal-body .book_info img{
+margin-top:20px;
+    }
+
+.payment_info input{
+    margin-top:20px;
+}
+.payment_info button {
+    margin-top: 100px;
+    margin-left:40%;
+}
+
+
+@media (min-width: 576px) {
+    .modal-dialog {
+    
+    margin-left: 25% !important;
+}
+
+}
+.modal-backdrop .show {
+    opacity: .5 !important;
+}
+
+.payment_info form button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #7cc1b2;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    border: none;
+    margin-left: 25%;
+}
+.pay_method{
+    display:flex;
+}
+.card {
+    width: 29%;
+    margin: 0 10% 25px 10%;
+    border: none;
+    background: none;
+    height: 50px;
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.foc {
+    -webkit-filter: none;
+    filter: none;
+}
+/*#visa:focus {
+    -webkit-filter: none;
+    filter: none;
+}
+#mastercard:focus {
+    -webkit-filter: none;
+    filter: none;
+}*/
+
+#visa {
+    background-image: url("http://enwaara.se/codepen/visa.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+   
+}
+
+#mastercard {
+    background-image: url("http://enwaara.se/codepen/mastercard.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+.payment_info button:hover {
+    background: #7cc1b2;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #7cc1b2, 0 0 25px #7cc1b2, 0 0 50px #7cc1b2, 0 0 100px #7cc1b2;
+}
+
+.payment_info button span {
+    position: absolute;
+    display: block;
+}
+
+    .payment_info button span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #7cc1b2);
+        animation: btn-anim1 1s linear infinite;
+    }
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,100% {
+        left: 100%;
+    }
+}
+
+.payment_info button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #7cc1b2);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,100% {
+        top: 100%;
+    }
+}
+
+.payment_info button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #7cc1b2);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,100% {
+        right: 100%;
+    }
+}
+
+.payment_info button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #7cc1b2);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,100% {
+        bottom: 100%;
+    }
+}
+
+.msg{
+    text-align:center;
+    margin-top:50px;
+}
+footer{
+    margin-top:10%;
+}

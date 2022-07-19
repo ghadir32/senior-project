@@ -1,0 +1,155 @@
+body {
+    background-color: #7cc1b2;
+}
+
+.team-section h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.team-section h2 {
+    text-decoration: underline;
+}
+
+.team-section {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.team-inner-div {
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* product div */
+
+.team-inner-div h2 {
+    width: 100%;
+}
+
+.team-dr-div {
+    /* background-color: rgb(255, 0, 0); */
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.team-dr2-div {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.team-inner-div {
+    text-align: center;
+}
+
+.team-item {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.team-item-inner-div {
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+}
+
+.team-item-inner-div:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    transition: all ease 300ms;
+}
+
+.team-dr-inside-div {
+    padding: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: start;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+
+.dr-sale-div {
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    left: 20px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+.link-wraper-section {
+    color: black;
+    text-decoration: none;
+}
+
+.link-wraper-section:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.dr-item-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 28px;
+    height: 56px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dr-item-price {
+    text-align: center;
+}
+
+.dr-item-button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    justify-self: end;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    margin-bottom: 25px;
+}
+
+.dr-item-button:hover {
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: white;
+    transition: 300ms;
+}
+
+.team-dr-image-div {
+    height: auto;
+    width: 100%;
+}
+
+.team-dr-image-div img {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 30px;
+}

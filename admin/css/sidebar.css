@@ -1,0 +1,228 @@
+
+body {
+    background-color: #E1F3EF !important;
+}
+
+.fa-2x {
+    font-size: 2em;
+}
+
+.ff {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 28px;
+}
+
+.fa-sign-out-alt {
+    transform: rotate(180deg);
+}
+
+.main-menu:hover, nav.main-menu.expanded {
+    width: 250px;
+    overflow: visible;
+}
+
+.main-menu .image img {
+    position: static;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 14px 7px 2px 11px;
+}
+
+    .main-menu img:hover {
+        opacity: 80%;
+    }
+
+.main-menu:hover .image img {
+    margin-left: 25%;
+    width: 130px;
+    height: 130px;
+}
+
+.main-menu {
+    background: #7cc1b2;
+    border-right: 1px solid #e5e5e5;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 60px;
+    overflow: hidden;
+    -webkit-transition: width .05s linear;
+    transition: width .05s linear;
+    -webkit-transform: translateZ(0) scale(1,1);
+    z-index: 1000;
+}
+
+    .main-menu:hover ul {
+        margin-top: 20px;
+    }
+
+    .main-menu > ul {
+        margin: 8px 0;
+    }
+
+    .main-menu li {
+        position: relative;
+        display: block;
+        width: 250px;
+        margin-bottom: 5px;
+    }
+
+        .main-menu li > a {
+            position: relative;
+            display: table;
+            border-collapse: collapse;
+            border-spacing: 0;
+            color: #fff;
+            font-weight: bold;
+            font-family: arial;
+            font-size: 18px;
+            text-decoration: none;
+            -webkit-transform: translateZ(0) scale(1,1);
+            -webkit-transition: all .1s linear;
+            transition: all .1s linear;
+        }
+
+    .main-menu .nav-icon {
+        position: relative;
+        display: table-cell;
+        width: 60px;
+        height: 36px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 18px;
+    }
+
+    .main-menu .nav-text {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        width: 190px;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+    .main-menu .logout {
+        position: absolute;
+        left: 0;
+        bottom:0;
+    }
+
+
+
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+nav {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    nav ul, nav li {
+        outline: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-menu li:hover > a, nav.main-menu li.active > a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus, .no-touch .dashboard-page nav.dashboard-menu ul li:hover a, .dashboard-page nav.dashboard-menu ul li.active a {
+        color: #fff;
+        background-color: #5fa2db;
+    }
+
+.area {
+    float: left;
+    background: #e2e2e2;
+    width: 100%;
+    height: 100%;
+}
+
+.main-menu{
+    visibility:visible;
+}
+#menubtn{
+    visibility:hidden;
+    display:none;
+}
+@media screen and (max-width: 1155px) {
+    .main-menu {
+        width: 100%;
+        visibility: hidden;
+    }
+
+    #menubtn #menu {
+        visibility: visible;
+        display: block;
+        margin-top: 5px;
+    }
+
+    #menubtn {
+        visibility: visible;
+        display: grid;
+    }
+
+    .main-menu img:hover {
+        opacity: 80%;
+    }
+
+    .main-menu:hover .image img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 130px;
+        height: 130px;
+    }
+
+    .main-menu .image img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 130px;
+        height: 130px;
+    }
+
+    .main-menu:hover {
+        width: 100%;
+    }
+
+    .main-menu ul {
+        margin-top: 4%;
+    }
+
+    .main-menu:hover ul {
+        margin-top: 4%;
+    }
+
+    .main-menu .logout {
+        bottom: 0px;
+    }
+
+    .main-menu .image {
+        position: relative;
+        left: 0;
+        top: 5px;
+    }
+}
+
+
+.profile_link{
+
+    text-decoration:none !important;
+    color: black;
+}
+    .profile_link:hover {
+        /*        background: #88e8cd;*/
+
+       /* color: #3a43eb;*/
+        color: blue;
+        border-radius: 20%;
+    }

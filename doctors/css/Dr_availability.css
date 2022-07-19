@@ -1,0 +1,156 @@
+ 
+#content {
+    margin:1% 1% 0 6%;
+}
+
+#creatingSchedule{
+    padding: 35px 0 35px 20px;
+    margin-bottom: 100px;
+    margin-top: 2%;
+    width: 70%;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 2px 6px 10px 2px rgba(0, 0, 0, 0.2), 2px 8px 24px 2px rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    position: relative; 
+}
+
+.workdates{
+    padding: 35px 0 35px 20px;
+    margin-bottom: 100px;
+    margin-top: 2%;
+    width: 70%;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 2px 6px 10px 2px rgba(0, 0, 0, 0.2), 2px 8px 24px 2px rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    position: relative;   
+}
+
+.messageCheckbox{
+    display: block;
+}
+
+.weekdaysCheck{
+    margin: 20px 0 20px 0;
+    /* display: inline; */
+}
+
+#FromToDates{
+    margin: 20px 0 0 0;
+}
+
+.dateInput{
+    margin-left: 10px;
+    display: inline !important;
+}
+
+.totime{
+    margin-left: 30px;
+}
+
+.times{
+    display: block;
+    position: relative;
+}
+
+.spanspace{ 
+    display: inline-block; /* This fixes it. */
+    width: 50px;
+    margin: 0 20px 0 20px;
+}
+
+.deleteDay{
+    position: absolute !important;
+    top: 5px;
+    right: 0px;
+    font-size: 20px !important;
+
+    cursor: pointer;
+}
+
+#submitTime{
+    display: none;
+    margin: 10px;
+}
+
+#chooseTimes{
+    margin: 5px;
+}
+
+.daysmissedAlert, .datesmissedAlert, .timemissedAlert, .daysoffsuccess, .datesextendAlert, .daysOnsuccess{
+    display: none;
+}
+
+
+h1 {
+color: green;
+}
+
+.multipleSelection {
+    width: 250px;
+    background-color: #BCC2C1;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#checkBoxes {
+    display: none;
+    border: 1px #7cc1b2 solid;
+    min-height: fit-content;
+    max-height: 250px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 1% 1% 3% 3%;
+
+}
+
+.multipleSelection{
+    border-radius: 1% 1% 3% 3%;
+
+}
+
+#checkBoxes::-webkit-scrollbar {
+    width: 10px;
+}
+
+#checkBoxes::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+#checkBoxes::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+#checkBoxes label {
+    display: block;
+}
+
+#checkBoxes label:hover {
+    background-color: #4F615E;
+}
+
+#datesOff{
+    margin-top: 10px !important;
+}
+
+.labelDate{
+    margin-left: 5px !important;
+}

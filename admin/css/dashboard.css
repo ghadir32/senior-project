@@ -1,0 +1,303 @@
+﻿
+
+.content {
+    margin:5% 0% 0 14%;
+    width:85%;
+}
+.text-xs{
+    font-size:18px !important;
+   
+}
+
+.card {
+    background: #7cc1b2 !important;
+    float: left;
+    width: 18%;
+    margin: 10px;
+    color: #1e1c1c;
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.6),0 2px 10px 0 rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.6),0 2px 10px 0 rgba(0,0,0,0.4);
+    border-radius: 3px 4px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.6),0 2px 5px 0 rgba(0,0,0,0.4);
+}
+.col-auto{
+    color:white;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.card-body {
+    text-align: left;
+}
+
+.row {
+    height: 5%;
+}
+
+
+/*table design */
+table {
+    border-collapse: collapse;
+    width: 100%;
+   
+}
+.table_control {
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.6),0 2px 10px 0 rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.6),0 2px 10px 0 rgba(0,0,0,0.4);
+    border-radius: 3px 4px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.6),0 2px 5px 0 rgba(0,0,0,0.4);
+}
+
+.table_today_app {
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.6),0 2px 10px 0 rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.6),0 2px 10px 0 rgba(0,0,0,0.4);
+    border-radius: 9px 12px;
+    margin-bottom: 35px;
+    margin-top: 20px;
+    padding: 30px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.6),0 2px 10px 0 rgba(0,0,0,0.4);
+    width: 96%;
+}
+tr {
+   /* font-size: 17px;*/
+    text-align: center;
+    vertical-align: middle !important;
+   
+}
+td {
+   /* font-size: 18px;*/
+    vertical-align: middle !important;
+}
+tr th {
+    background: #7cc1b2;
+   
+}
+.sort{
+    opacity:20%;
+
+}
+/*table control design*/
+.col-sm-6 .dataTables_length label {
+    justify-content: left;
+    display:inline-block;
+}
+.col-sm-6 .dataTables_length .labledate{
+    margin-left:50px;
+}
+.col-sm-6 {
+    font-weight: bold;
+}
+.col-sm-6 .dataTables_length label select {
+    margin: 5px;
+}
+.search label {
+    justify-content: right !important;
+    display: inline-block;
+
+    margin-right:10px;
+}
+    .search label .btn{
+        justify-content: right !important;
+        margin-left: 100px;
+        
+        background: #7cc1b2;
+        font-weight: bold;
+    }
+    .search label input {
+        margin: 5px;
+    }
+
+.time_case:hover, .doctor:hover, .patient:hover, .starttime:hover, .endtime:hover, .status:hover, .date:hover, .app_date:hover, .pay_date:hover, .amount:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+/* table button design*/
+.action:hover {
+    opacity: 50%;
+}
+
+.fa-edit, .fa-trash, .fa-save {
+    font-size: 22px;
+}
+.fa-save {
+    color: green;
+}
+.fa-eye {
+    color: blue;
+}
+.fa-edit {
+    color: blue;
+}
+.activate .fa-check-circle {
+    color: green !important;
+}
+.fa-trash {
+    color: red;
+}
+.fa-check-circle {
+    color: blue;
+    font-size: 26px;
+}
+.fa-clock {
+    color: #9f9f9f;
+    font-size: 26px;
+}
+.fa-spinner {
+    color: #34db04;
+    font-size: 26px;
+}
+.fa-clipboard-check, .fa-calendar-times, .fa-ban{
+    font-size: 24px;
+}
+    .fa-clipboard-check{
+        color:#1f9f06;
+    }
+.fa-calendar-times{
+    color:#f75151
+}
+.fa-ban{
+    color:red;
+}
+#p5{
+    font-size:20px !important;
+}
+.selectedit{
+    width:170px!important;
+}
+td .selectedit {
+    margin-left:50px;
+    vertical-align:middle;
+}
+/*table reload*/
+.content .reload {
+    text-align: center;
+    margin-top: 20px;
+}
+.empty{
+    text-align:center;
+   font-size:20px;
+}
+.reload, .empty{
+    margin-bottom:10px;
+}
+* {
+    box-sizing: border-box;
+}
+.image{
+    display:block;
+}
+
+
+/*modal*/
+
+.modal{
+    margin-top:5%;
+}
+
+
+#form .mb-3 input {
+    margin-bottom: 5px;
+    width: 400px;
+}
+#form .mb-3 select {
+    margin-bottom: 5px;
+    width: 400px;
+}
+.modal-header {
+    background-color: #7cc1b2;
+    color: black;
+}
+
+.required:after {
+    color: red;
+}
+
+.addbtn {
+    text-align: right;
+    vertical-align: middle !important;
+}
+
+    .addbtn #submit_product {
+        background-color: blue;
+    }
+
+        .addbtn #submit_product:hover {
+            opacity: 70%;
+        }
+
+    .addbtn #Update_product {
+        background-color: #0f7a18;
+    }
+
+    .addbtn #cancel_p {
+        background-color: #efdd6e;
+    }
+
+        .addbtn #cancel_p:hover {
+            opacity: 70%;
+        }
+
+.modal .close {
+    color: black;
+}
+
+    .modal .close:hover {
+        color: dimgray;
+    }
+
+form input:hover {
+    opacity: 70%;
+}
+
+#paid {
+    margin-bottom: 5px;
+    margin-right: 10px;
+    width: 20px !important;
+}
+
+
+/* Responsive columns */
+@media screen and (max-width: 1155px) {
+    .card {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .content {
+        width: 90%;
+        margin-left: 5px;
+        margin-right: 8px;
+        margin-top:10%;
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 578px) {
+    .table_today_app{
+        margin-bottom: 20px;
+        width: 130% !important;
+        padding:10px !important;
+    }
+    .col-sm-6{
+        display:inline !important;
+    }
+    .content {
+        padding: 15px;
+        width: 100%;
+    }
+    .row{
+        padding:10px;
+    }
+        .content table tr, td{
+            font-size: 11px !important;
+        }
+        .content table{
+            width:100%;
+        }
+}
+
+.pay_method{
+    text-transform:uppercase;
+    font-weight:bold;
+}
