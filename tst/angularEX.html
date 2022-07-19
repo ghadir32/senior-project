@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  
+
+
+</head>
+<body>
+    
+
+      <div ng-controller="myFirstController" >
+          
+        <div id="template1" ng-cloak>{{ 'hello' }}</div>
+        <div id="template2" class="ng-cloak">{{ 'world' }}</div>
+
+        <br>
+        <h1 ng-cloak ng-reply="hello new attribute" >heeloo {{ fname + ' ' + lname  }}</h1>
+        <textarea> {{jobvalue}}</textarea>
+
+        <input id="test" type="text" ng-model="handle"/>
+        <h1  ng-cloak> {{ newh() }}</h1>
+        <div class="alert " ng-class="{ 'alert-warning' : newh().length < charnb, 'alert-danger' : newh().length > charnb}" ng-show="newh().length !== charnb">
+                <div ng-show="newh().length < charnb"> you entered less than 5 chars</div>
+                <div ng-show="newh().length > charnb"> you entered more than 5 chars </div>
+
+        </div>
+
+        <ul>
+            <li ng-repeat="sent in arr"  ng-cloak > {{ sent.arrname }}</li>
+        </ul>
+
+        new email: <input type="text" ng-model="newEmail"/>
+        <a href="#" class="btn btn-default" ng-click="newemail">ADD</a>
+
+        <div ng-if="1==3"> trying ng ifff</div>
+  
+        <div class="form-group">
+            <label for="job title" id="div_title" class="label_title">Job Title <div class="edit_i_div"> <i class="fas fa-pen  editt"   ></i> </div> </label>
+            <br>
+            <textarea disabled class="text-areaa"  placeholder="testing" > {{job()}}</textarea>
+            <textarea class="col-8 edit_text-area"  ng-model="jobtitle" placeholder="A breif description about your job and specifications in the main disorders or disease you work with." rows="2" ></textarea>
+             <hr class="textbox_hr">
+          </div>
+          <textarea placeholder="view" ng-show="practice().length > 3">{{practice()}}</textarea>
+          <textarea placeholder="view" ng-model="practicefill"></textarea>
+
+      </div>
+
+      <div ng-if="onOff" class="fold-animation">
+        This element will go BOOM
+      </div>
+      <button ng-click="onOff=true">Fold In</button>
+
+     
+
+
+
+      <script src="https://code.angularjs.org/1.7.5/angular.min.js"></script>
+      <script src="https://code.angularjs.org/1.8.2/angular-messages.js"></script>
+      <script src="https://code.angularjs.org/1.8.2/angular-animate.js"></script>
+
+      <script src="angJs.js"></script>
+</body>
+</html>

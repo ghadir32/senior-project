@@ -1,0 +1,187 @@
+
+
+/*navbar*/
+.navbar {
+    background-color: black;
+}
+
+.nav-link {
+    color: white;
+}
+.nav-link:hover {
+    color: dimgray;
+}
+
+#menubtn {
+    width: 50px;
+    height: 50px;
+    background: #000000;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 10px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+    #menubtn img {
+        width: 20px;
+        margin-top: 15px;
+    }
+        #menubtn:hover {
+            opacity:50%;
+        }
+
+        #sideNav {
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            margin-top: 50px;
+            right: -250px;
+            top: 0;
+            background: #000000;
+            z-index: 2;
+            transition: 0.5s;
+            opacity:90%;
+        }
+
+ /*side navbar*/
+#sideNav nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+       
+#sideNav nav ul li a {
+         
+    text-decoration: none;    
+    color: #fff;
+   
+}
+
+           
+#sideNav nav ul li a:hover {        
+    color: dimgray;      
+              
+   }
+   .btnsort{
+    background-color: black;
+    color:white !important ;
+   }
+
+/*title*/
+.title-text {
+    text-align: center;
+    padding-bottom: 70px;
+    margin-top:110px;
+}
+/*control*/
+form .btn {
+    background-color: black;
+    color:white;
+}
+form .btn:hover {
+        background-color: dimgray;
+        color: white;
+    }
+form span{
+    font-size:18px;
+}
+.select:hover{
+    opacity:70%;
+}
+#insearch:hover {
+    opacity: 70%;
+}
+
+
+ .hideP { 
+     display: none;
+    }
+
+/*table*/
+tr {
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle !important;
+}
+td {
+    font-size: 18px;
+    vertical-align: middle !important;
+}
+
+tr img {
+    width:110px;
+    height:110px;
+    border-radius:10px;
+}
+.fa-thumbs-up {
+    color: forestgreen;
+    font-size: 22px;
+}
+.fa-thumbs-down {
+    color: crimson;
+    font-size: 22px;
+}
+#action button:hover {
+    opacity: 50%;
+}
+.fa-edit, .fa-trash{
+    font-size:22px;
+}
+.fa-edit {
+    color: blue;
+}
+.fa-trash{
+    color:red;
+}
+/*modal*/
+.modal{
+    margin-top:10%;
+    width:500px;
+    height:1000px;
+}
+.modal-header {
+    background-color:black ;
+    color: #fff;
+}
+
+.required:after {
+    
+    color: red;
+}
+.addbtn {
+    text-align: right;
+    vertical-align: middle !important;
+}
+.modal .close {
+    color:white;
+}
+.modal .close:hover {
+    color: dimgray;
+}
+form input:hover {
+    opacity: 70%;
+}
+
+/* delete or deactivate modal */
+#myModaldelete  .modal-body {
+    text-align: center !important;
+}
+#myModaldelete{
+    margin-top:20%;
+}
+#myModaldelete .modal-header {
+    background-color:#b41b11;
+}
+#deactivate_product {
+    color: white;
+    background-color:firebrick;
+}
+#delete_product {
+    color: white;
+    background-color: red;
+}
+#cancel_delete {
+    background-image: linear-gradient(black,red);
+}
